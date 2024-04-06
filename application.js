@@ -97,6 +97,8 @@ $(document).ready(function() {
   $(document).on('change', '.mark-complete', function() {
     if (this.checked) {
       markTaskComplete($(this).data('id'));
+    } else {
+      markTaskActive($(this).data('id'))
     }
   });
 
